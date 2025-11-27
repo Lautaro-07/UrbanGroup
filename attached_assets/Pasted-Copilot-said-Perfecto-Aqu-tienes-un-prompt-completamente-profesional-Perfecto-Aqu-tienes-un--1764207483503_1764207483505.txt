@@ -1,0 +1,37 @@
+Copilot said: ¡Perfecto! Aquí tienes un prompt completamente profesional
+¡Perfecto! Aquí tienes un prompt completamente profesional y exhaustivo para Replit IA, orientado a la migración idéntica (tanto en diseño como en funcionalidad) del proyecto UrbanPropiedades desde Node.js/TypeScript/Vite a una pila PHP, HTML, CSS, JavaScript y MySQL.
+
+Prompt profesional para Replit IA
+Quiero que crees una réplica idéntica y profesional del sistema web inmobiliario “UrbanPropiedades” usando únicamente PHP, HTML, CSS, JavaScript y MySQL. La aplicación debe ser completamente funcional, profesional y con el mismo diseño visual y funcionalidades que el sistema original basado en Node.js/TypeScript/Vite/Tailwind.
+
+Los requerimientos estrictos son:
+
+Diseño y Experiencia de Usuario
+El diseño visual debe ser idéntico al original: mismas paletas de colores, disposición de elementos, tipografías y responsividad.
+Replicar todas las animaciones, interacciones e interfaces usando solo CSS y JavaScript clásico, sin frameworks modernos (no Tailwind, no React, no Vite).
+Imágenes, iconos y cualquier recurso gráfico deben lucir igual que en el original.
+Funcionalidad Completa
+Listado de propiedades con paginación y filtros avanzados: tipo, ubicación, precio, palabras clave.
+Página de detalle para cada propiedad (con galería de imágenes, mapa, descripciones y datos relevantes).
+Panel de administración con CRUD total (alta, baja, modificación y vista de propiedades).
+Registro y autenticación de usuarios, sistema de roles (usuario/administrador/agente).
+Gestión segura de sesiones y validaciones tanto en frontend como backend.
+Subida y gestión de imágenes asociadas a cada propiedad, incluyendo galería, miniatura y borrado seguro.
+Búsqueda rápida, ordenación y filtros dinámicos usando AJAX y JavaScript tradicional.
+Interfaz profesional y responsiva, perfectamente utilizable en desktop, tablet y móvil.
+Páginas informativas (home, contacto, acerca de, etc.) idénticas al diseño original.
+Arquitectura y ejecución
+Estructura de carpetas y archivos idéntica (dentro de lo que permita PHP), documentada y orientada al despliegue profesional.
+Scripts SQL para generar toda la base de datos MySQL, incluyendo tablas de propiedades, usuarios, imágenes y relaciones.
+Archivos PHP listos para desplegar en XAMPP, Hostinger o cualquier otro hosting compatible con PHP/MySQL clásico.
+Documentación detallada en un README sobre instalación, configuración y uso.
+Todos los recursos y dependencias incluidas en el propio proyecto (sin Node ni npm ni frameworks externos).
+Detalles avanzados
+Replicar la estructura del frontend y backend por directorios tal como en la versión Node, adaptada a la lógica de PHP y web clásico.
+Mantener códigos limpios, comentados y siguiendo las mejores prácticas de programación web profesional.
+Cada formulario, validación, interacción y funcionalidad debe operar igual que en el sistema original.
+Extras importantes
+Si hay funcionalidades extra en el sistema original (gestión de favoritos, alertas, mensajería interna, etc.), deben estar implementadas.
+Si existen guías de diseño/documentación, respétalas en todo el proyecto.
+El resultado debe ser un sitio web inmobiliario igual en apariencia y en funcionalidad al original, pero usando únicamente PHP puro, HTML, CSS, JavaScript clásico y MySQL.
+
