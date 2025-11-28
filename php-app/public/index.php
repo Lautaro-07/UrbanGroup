@@ -12,6 +12,7 @@ $locationModel = new LocationModel();
 $featuredProperties = $propertyModel->getFeatured(8);
 $regions = $locationModel->getRegions();
 
+
 $pageTitle = 'Inicio';
 $currentPage = 'home';
 
@@ -34,7 +35,7 @@ include __DIR__ . '/../templates/header.php';
         </p>
         
         <!-- Search Form -->
-        <form action="/propiedades.php" method="GET" class="bg-white/95 backdrop-blur-sm rounded-xl shadow-2xl p-4 md:p-6 lg:p-8 max-w-6xl mx-auto">
+        <form action="propiedades.php" method="GET" class="bg-white/95 backdrop-blur-sm rounded-xl shadow-2xl p-4 md:p-6 lg:p-8 max-w-6xl mx-auto">
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3 lg:gap-4">
                 <div class="space-y-2 text-left">
                     <label class="text-xs md:text-sm font-medium text-slate-700">Tipo de Operación</label>
@@ -73,7 +74,7 @@ include __DIR__ . '/../templates/header.php';
                 </div>
                 
                 <div class="space-y-2 text-left lg:col-span-1 col-span-1 sm:col-span-2 lg:col-span-1">
-                    <button type="submit" class="w-full h-full bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition flex items-center justify-center gap-2 py-2">
+                    <button type="submit" style="height: 50px; position: relative; top: 20px; left: 8px;" class="w-full h-full bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition flex items-center justify-center gap-2 py-2">
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <circle cx="11" cy="11" r="8"></circle>
                             <path d="m21 21-4.35-4.35"></path>
@@ -94,7 +95,7 @@ include __DIR__ . '/../templates/header.php';
                 <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-2">Propiedades Destacadas</h2>
                 <p class="text-gray-600 text-sm md:text-base">Descubre las mejores oportunidades inmobiliarias seleccionadas para ti</p>
             </div>
-            <a href="/propiedades.php" class="px-6 py-2 border border-gray-300 text-gray-700 font-medium rounded-lg hover:bg-gray-50 transition whitespace-nowrap">Ver todas</a>
+            <a href="propiedades.php" class="px-6 py-2 border border-gray-300 text-gray-700 font-medium rounded-lg hover:bg-gray-50 transition whitespace-nowrap">Ver todas</a>
         </div>
         
         <?php if (empty($featuredProperties)): ?>
@@ -108,7 +109,7 @@ include __DIR__ . '/../templates/header.php';
         <?php else: ?>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
                 <?php foreach ($featuredProperties as $property): ?>
-                    <a href="/propiedad.php?id=<?= $property['id'] ?>" class="group">
+                    <a href="propiedad.php?id=<?= $property['id'] ?>" class="group">
                         <div class="hover-elevate bg-white border border-gray-200/50 rounded-xl overflow-hidden">
                             <div class="relative aspect-[4/3] overflow-hidden">
                                 <img src="<?= getFirstImage($property['images']) ?>" alt="<?= htmlspecialchars($property['title']) ?>" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
@@ -224,7 +225,7 @@ document.getElementById('regionSelect').addEventListener('change', function() {
         return;
     }
     
-    fetch('/api/get-comunas.php?region_id=' + regionId)
+    fetch('api/get-comunas.php?region_id=' + regionId)
         .then(r => r.json())
         .then(comunas => {
             comunaSelect.innerHTML = '<option value="">Seleccionar</option>';
